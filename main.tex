@@ -1,0 +1,183 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\color{Black}\scshape\raggedright\Large
+}{}{0em}{}[\color{Black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\Huge \scshape Dhruv Koli} & \small \href{https://dask-58.github.io}{\faIcon{globe} \hspace{1mm} https://dask-58.github.io} \\
+  \small \href{https://linkedin.com/in/dhruvkoli}{\faIcon{linkedin} \hspace{1mm} LinkedIn: dhruvkoli} & \small \raisebox{0.0\height}{\reflectbox{\faIcon{phone}} \hspace{1mm} +91 7823080783} \\
+  \small \href{https://github.com/dask-58}{\faIcon{github} \hspace{1mm} Github: dask-58} & \small \href{mailto:googldhruv@gmail.com}{\raisebox{0.0\height}{\faIcon{envelope} \hspace{1mm} googldhruv@gmail.com}} \\
+\end{tabular*}
+
+\vspace{-5pt}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Indian Institute of Information Technology, Dharwad}{2023 -- 2027}{B.Tech. - Computer Science \& Engineering -- 8.41 / 10 CPI}{Dharwad, KA, India}
+\resumeSubheading
+{PM Shri Kendriya Vidyalaya, C.R., Solapur}{2011 -- 2021}{Secondary Schooling}{Solapur, MH, India}
+\resumeSubHeadingListEnd
+
+\vspace{-7pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{None}{}{}{}
+\resumeSubHeadingListEnd
+
+\vspace{-7pt}
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{Erudite -- GenAi Web App}}{\href{https://dask-58.github.io/daskgenai}{\faIcon{link} \hspace{1mm} Live}}
+\resumeItemListStart
+\resumeItem{Developed and deployed a web application using React, Vite, and Tailwind CSS, integrating the Google Gemini Pro Vision Model API to create an AI-powered platform that supports text inputs for real-time, accurate responses.}
+\resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Personal Portfolio \& Blog}}{}
+\resumeItemListStart
+\resumeItem{Designed and built a personal portfolio and blog website using Astro and Vue, showcasing projects and blog posts on various topics including computer science, AI, and personal experiences.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-7pt}
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeItemListStart
+\resumeItem{Achieved \textbf{Pupil} status on Codeforces with a peak rating of 1340.}
+\resumeItem{Attained \textbf{3-star} status on CodeChef with a maximum rating of 1704.}
+\resumeItem{Consistently ranked in the top \textbf{8\%} globally on LeetCode, reaching a peak rating of 1782.}
+\resumeItem{Secured victories in multiple college contests organized by prestigious clubs like Google DSC and the Competitive Programming Club, excelling in domains including Machine Learning, Algorithmic, and Heuristic problem-solving.}
+\resumeItemListEnd
+
+\vspace{-7pt}
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Positions of Responsibility}
+\resumeItemListStart
+\resumeItem{Coordinator and problem setter at \textbf{Return 0}, the competitive programming club of IIIT DWD.}
+\resumeItem{Teaching assistant at \textbf{Return 0}, Problem Setter, Tester and Contributor at \textbf{Codechef, LeetCode.}}
+\resumeItemListEnd
+
+\vspace{-7pt}
+%-----------SKILLS AND INTERESTS-----------
+\section{Skills and Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item{
+        \textbf{Languages}{: C/C++, Python, Lua, Bash, JavaScript, HTML/CSS} \\[5pt]
+        \textbf{Tools}{: Vue, Astro, React, Tailwind, Vim/Neovim, Unix/Linux, MacOS, VSCode, Sublime, \LaTeX} \\[5pt]
+        \textbf{Technical Skills}{: Machine Learning, Data Structures and Algorithms, Web Design, Deep Learning, System Design}
+        }
+\end{itemize}
+
+\end{document}
+
